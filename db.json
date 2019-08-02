@@ -1,0 +1,38 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Soy un titulo 1",
+      "author": "typicode",
+      "date": "05/05/94"
+    },
+    {
+      "id": 2,
+      "title": "Soy un titulo 2",
+      "author": "typicode",
+      "date": "05/05/95"
+    },
+    {
+      "id": 3,
+      "title": "Soy un titulo 3",
+      "author": "typicode",
+      "date": "05/05/96"
+    },
+    {
+      "id": 4,
+      "title": "Soy un titulo 4",
+      "author": "typicode",
+      "date": "05/05/99"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
