@@ -1,18 +1,36 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import BlogEntry from './blog.js';
 
-class blogComponent extends Component {
-    
+class blogEntry extends Component {
     render() {
         return (
-            <div>
-                <h2> Blog </h2>
-                <BlogEntry title="Soy el titulo 1" author="Juan Méndez" date="05/05/94"/>
-                <BlogEntry title="Soy el titulo 2" author="Juan Méndez" date="05/06/95"/>
+            <div class="blog-container">
+                <div>
+                    <img src={this.props.img ? this.props.img : 'https://via.placeholder.com/150'} alt={this.props.title} />
+                </div>
+                <p>{this.props.title}</p>
+                <p>{this.props.description}</p>
+                <p> <strong>Autor: </strong> {this.props.author}</p>
+                <p><strong>Fecha:</strong> {this.props.date}</p>
             </div>
         );
     }
 }
 
-export default blogComponent;
+blogEntry.propTypes = {
+    title: PropTypes.string,
+    description: PropTypes.string,
+    author: PropTypes.string,
+    date: PropTypes.string,
+    img: PropTypes.string,
+};
+
+blogEntry.defaultProps = {
+    title: 'Sin Titulo',
+    description: 'Sin Descripción',
+    author: 'Sin autor',
+    date: 'Sin Fecha',
+    // img: PropTypes.string,
+};
+
+export default blogEntry;
