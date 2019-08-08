@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
-import Blog from './components/blog'
+import './stylesheets/main.scss';
+import Blog from './containers/blog'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 function Index() {
   return <h2>Home</h2>;
@@ -42,32 +45,19 @@ function App() {
 
       <Router>
         <div>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/about/">About</Link>
-              </li>
-              <li>
-                <Link to="/users/">Users</Link>
-              </li>
-              <li>
-                <Link to="/blog/">Blog</Link>
-              </li>
-              <li>
-                <Link to="/contact/">Contact</Link>
-              </li>
-            </ul>
-          </nav>
-
-          <Route path="/" exact component={Index} />
-          <Route path="/about/" component={About} />
-          <Route path="/users/" component={Users} />
-          <Route path="/blog/" component={Blog} />
-          <Route path="/contact/" render={(props) => <Contact {...props} name='Juan' />}  />
+          
+          <Header />
+          <div className="container">
+            <Route path="/" exact component={Index} />
+            <Route path="/about/" component={About} />
+            <Route path="/users/" component={Users} />
+            <Route path="/blog/" component={Blog} />
+            <Route path="/contact/" render={(props) => <Contact {...props} name='Juan' />}  />
+          </div>
+          <Footer /> 
+        
         </div>
+
       </Router>
 
   );

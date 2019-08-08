@@ -1,0 +1,24 @@
+.header{
+    ul{
+        background: $primary-color;
+        display: flex;
+        justify-content: flex-end; //coloca los menus a la derecha
+        margin: 0;
+        li{
+            flex-direction: column;
+            padding: 1em 1em;
+            margin-right: 5px;
+            text-decoration: none;
+            list-style: none;
+            :hover{
+                color: #ddd;
+            }
+            a{
+                background: $secundary-color;
+                padding: 1em 1em;
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
