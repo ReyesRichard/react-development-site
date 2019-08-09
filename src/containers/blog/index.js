@@ -23,6 +23,36 @@ class blogContainer extends Component {
                     author: "Raul Palencia",
                     date: "05/06/99"
                 },
+                {
+                    title: "Soy el title 1",
+                    author: "Juan Méndez Pérez",
+                    date: "05/06/94"
+                },
+                {
+                    title: "Soy el title 2",
+                    author: "Pedro Mora Pérez",
+                    date: "05/06/95"
+                },
+                {
+                    title: "Soy el title 3",
+                    author: "Raul Palencia",
+                    date: "05/06/99"
+                },
+                {
+                    title: "Soy el title 1",
+                    author: "Juan Méndez Pérez",
+                    date: "05/06/94"
+                },
+                {
+                    title: "Soy el title 2",
+                    author: "Pedro Mora Pérez",
+                    date: "05/06/95"
+                },
+                {
+                    title: "Soy el title 3",
+                    author: "Raul Palencia",
+                    date: "05/06/99"
+                },
             ]
         }
     }

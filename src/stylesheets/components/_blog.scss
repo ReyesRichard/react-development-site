@@ -1,8 +1,19 @@
 .blog-container{
     background: #ccc;
     display: flex;
-    flex-direction: column;
+    flex-direction: row; //row de entry blog
+    flex-wrap: wrap; //hace que se bajen los bloques y no esten de corrido
+
     .blog{
         background: #aaa;
+        flex-grow: 1;
+        flex-basis: 350px;
+        // max-width: 300px;
+        margin-right:   1em;
+        margin-bottom: 2em;
+        padding: 1em;
+        p{
+
+        }
     }
 }

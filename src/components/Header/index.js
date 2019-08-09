@@ -16,6 +16,9 @@ class headerComponent extends Component {
                         <Link to="/users/">Users</Link>
                     </li>
                     <li>
+                        <Link to="/shop/">Shop</Link>
+                    </li>
+                    <li>
                         <Link to="/blog/">Blog</Link>
                     </li>
                     <li>

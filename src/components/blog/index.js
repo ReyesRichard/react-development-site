@@ -18,6 +18,9 @@ class blogEntry extends Component {
                             <p>{blog.description}</p>
                             <p> <strong>Autor: </strong> {blog.author}</p>
                             <p><strong>Fecha:</strong> {blog.date}</p>
+                            <div>
+                                <button className="btn"> Leer más</button>
+                            </div>
                         </div>
                     )
                 }

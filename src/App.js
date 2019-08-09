@@ -19,6 +19,9 @@ function About() {
 function Users() {
   return <h2>Users</h2>;
 }
+function Shop() {
+  return <h2>Shop</h2>;
+}
 
 let Contact =  (props) => (
   <div>
@@ -52,6 +55,7 @@ function App() {
             <Route path="/" exact component={Home} />
             <Route path="/about/" component={About} />
             <Route path="/users/" component={Users} />
+            <Route path="/shop/" component={Shop} />
             <Route path="/blog/" component={Blog} />
             <Route path="/contact/" render={(props) => <Contact {...props} name='Juan' />}  />
           </div>
