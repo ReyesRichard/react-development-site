@@ -2,16 +2,25 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class blogEntry extends Component {
+    constructor(props) {
+        super(props);
+    }
     render() {
         return (
-            <div class="blog-container">
-                <div>
-                    <img src={this.props.img ? this.props.img : 'https://via.placeholder.com/150'} alt={this.props.title} />
-                </div>
-                <p>{this.props.title}</p>
-                <p>{this.props.description}</p>
-                <p> <strong>Autor: </strong> {this.props.author}</p>
-                <p><strong>Fecha:</strong> {this.props.date}</p>
+            <div className="blog-container">
+                {
+                    this.props.blogs.map((blog) =>
+                        <div className="blog">
+                            <div>
+                                <img src={blog.img ? blog.img : 'https://via.placeholder.com/150'} alt={blog.title} />
+                            </div>
+                            <p>{blog.title}</p>
+                            <p>{blog.description}</p>
+                            <p> <strong>Autor: </strong> {blog.author}</p>
+                            <p><strong>Fecha:</strong> {blog.date}</p>
+                        </div>
+                    )
+                }
             </div>
         );
     }

@@ -1,0 +1,8 @@
+.blog-container{
+    background: #ccc;
+    display: flex;
+    flex-direction: column;
+    .blog{
+        background: #aaa;
+    }
+}

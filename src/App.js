@@ -3,13 +3,14 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 import './stylesheets/main.scss';
+import Home from './containers/Home'
 import Blog from './containers/blog'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
-function Index() {
-  return <h2>Home</h2>;
-}
+// function Index() {
+//   return <h2>Home</h2>;
+// }
 
 function About() {
   return <h2>About</h2>;
@@ -48,7 +49,7 @@ function App() {
           
           <Header />
           <div className="container">
-            <Route path="/" exact component={Index} />
+            <Route path="/" exact component={Home} />
             <Route path="/about/" component={About} />
             <Route path="/users/" component={Users} />
             <Route path="/blog/" component={Blog} />
