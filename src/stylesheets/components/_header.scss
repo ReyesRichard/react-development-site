@@ -7,14 +7,16 @@
         li{
             flex-direction: column;
             padding: 1em 1em;
+            margin: 0;
             margin-right: 5px;
             text-decoration: none;
             list-style: none;
             :hover{
-                color: #ddd;
+                // color: #ddd;
+                background: $secundary-color;
             }
             a{
-                background: $secundary-color;
+                // background: $secundary-color;
                 padding: 1em 1em;
                 text-decoration: none;
                 color: white;
