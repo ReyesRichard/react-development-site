@@ -6,11 +6,13 @@ class blogEntry extends Component {
         super(props);
     }
     render() {
+        const isLoading = this.props.isLoading;
         return (
             <div className="blog-container">
                 {
-                    this.props.blogs.map((blog) =>
-                        <div className="blog">
+                    isLoading ? 'Cargando..' :
+                    this.props.blogs.map((blog, index) =>
+                        <div className="blog" key={blog.id}>
                             <div>
                                 <img src={blog.img ? blog.img : 'https://via.placeholder.com/150'} alt={blog.title} />
                             </div>
@@ -19,7 +21,9 @@ class blogEntry extends Component {
                             <p> <strong>Autor: </strong> {blog.author}</p>
                             <p><strong>Fecha:</strong> {blog.date}</p>
                             <div>
-                                <button className="btn"> Leer más</button>
+                                <a href={blog.id}>
+                                    <button className="btn"> Leer más</button>
+                                </a>
                             </div>
                         </div>
                     )

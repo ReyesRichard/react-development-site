@@ -2,4 +2,8 @@
     padding: 10px 2em;
     background-color: $primary-color;
     color: white;
+    border: none;
+    :hover{
+        padding: 0px 2px
+    }
 }

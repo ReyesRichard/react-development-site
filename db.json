@@ -1,30 +1,61 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "Soy un titulo 1",
-      "author": "typicode",
-      "date": "05/05/94"
+      "id": "0",
+      "title": "Soy el title 1",
+      "author": "Juan Méndez Pérez",
+      "date": "05/06/94"
     },
     {
-      "id": 2,
-      "title": "Soy un titulo 2",
-      "author": "typicode",
-      "date": "05/05/95"
+      "id": "1",
+      "title": "Soy el title 2",
+      "author": "Pedro Mora Pérez",
+      "date": "05/06/95"
     },
     {
-      "id": 3,
-      "title": "Soy un titulo 3",
-      "author": "typicode",
-      "date": "05/05/96"
+      "id": "2",
+      "title": "Soy el title 3",
+      "author": "Raul Palencia",
+      "date": "05/06/99"
     },
     {
-      "id": 4,
-      "title": "Soy un titulo 4",
-      "author": "typicode",
-      "date": "05/05/99"
+      "id": "3",
+      "title": "Soy el title 4",
+      "author": "Juan Méndez Pérez",
+      "date": "05/06/94"
+    },
+    {
+      "id": "4",
+      "title": "Soy el title 5",
+      "author": "Pedro Mora Pérez",
+      "date": "05/06/95"
+    },
+    {
+      "id": "5",
+      "title": "Soy el title 6",
+      "author": "Raul Palencia",
+      "date": "05/06/99"
+    },
+    {
+      "id": "6",
+      "title": "Soy el title 7",
+      "author": "Juan Méndez Pérez",
+      "date": "05/06/94"
+    },
+    {
+      "id": "7",
+      "title": "Soy el title 8",
+      "author": "Pedro Mora Pérez",
+      "date": "05/06/95"
+    },
+    {
+      "id": "8",
+      "title": "Soy el title 9",
+      "author": "Raul Palencia",
+      "date": "05/06/99"
     }
   ],
+
   "comments": [
     {
       "id": 1,
