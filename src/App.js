@@ -3,25 +3,22 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 import './stylesheets/main.scss';
+
+import Routes from './routes'
+
 import Home from './containers/Home'
 import Blog from './containers/blog'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
-// function Index() {
-//   return <h2>Home</h2>;
+import About from './containers/About'
+import Transitions from './containers/Transitions'
+import Users from './containers/Users'
+import Shop from './containers/Shop'
+
+// function Shop() {
+//   return <h2>Shop</h2>;
 // }
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
-}
-function Shop() {
-  return <h2>Shop</h2>;
-}
 
 let Contact =  (props) => (
   <div>
@@ -51,9 +48,19 @@ function App() {
         <div>
           
           <Header />
-          <div className="container">
+          <div >
+
+            {/* {Routes.map((route) => (
+              <Route
+                key={route.path}
+                path={route.path}
+                component={route.component}
+              />
+            ))} */}
+            
             <Route path="/" exact component={Home} />
             <Route path="/about/" component={About} />
+            <Route path="/transitions/" component={Transitions} />
             <Route path="/users/" component={Users} />
             <Route path="/shop/" component={Shop} />
             <Route path="/blog/" component={Blog} />

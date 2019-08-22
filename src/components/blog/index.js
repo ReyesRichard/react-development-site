@@ -6,11 +6,22 @@ class blogEntry extends Component {
         super(props);
     }
     render() {
-        const isLoading = this.props.isLoading;
+        // const isLoading = this.props.isLoading;
+
+        const { blogs, isLoading, error } = this.props;
+
+        if (error) {
+            return <p>{error.message}</p>;
+        }
+
+        if (isLoading) {
+            return <p>Loading ...</p>;
+        }
+
         return (
             <div className="blog-container">
                 {
-                    isLoading ? 'Cargando..' :
+                    // isLoading ? 'Cargando..' :
                     this.props.blogs.map((blog, index) =>
                         <div className="blog" key={blog.id}>
                             <div>

@@ -10,7 +10,10 @@ class headerComponent extends Component {
                         <Link to="/">Home</Link>
                     </li>
                     <li>
-                        <Link to="/about/">About</Link>
+                        <Link to="/about/">Animation</Link>
+                    </li>
+                    <li>
+                        <Link to="/transitions/">Transitions</Link>
                     </li>
                     <li>
                         <Link to="/users/">Users</Link>

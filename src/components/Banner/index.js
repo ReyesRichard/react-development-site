@@ -25,8 +25,8 @@ class bannerComponent extends Component {
         return (
             <div>
                 <Carousel infiniteLoop autoPlay showThumbs={false} emulateTouch dynamicHeight showStatus={false}>
-                    {this.props.data.map((item)=>
-                        <div>
+                    {this.props.data.map((item, index)=>
+                        <div key={index}>
                             <img src={item.img} />
                             <p className="legend">{item.description}</p>
                         </div>

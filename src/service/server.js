@@ -1,14 +1,15 @@
-export default class MyServer {
-
-    client  = {
+class MyServer {
+    clients  = {
         prod: {
             URL: "http://misitio.com",
             key: "xxx"
         },
         dev: {
-            URL: "localhost:3001",
+            URL: "http://localhost:3001/",
             key: "xxx"
         }
     };
 
 };
+
+export default MyServer;
